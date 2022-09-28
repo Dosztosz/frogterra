@@ -87,8 +87,6 @@ button{
         li{
             transition: 0.3s;
             padding: 15px;
-            a{
-            }
             &:hover{
                 background-color: rgb(34, 73, 180);
             }
@@ -105,8 +103,20 @@ button{
                 justify-content: right;
             }
         }
-        .content{
-            display: flex;
+    }
+}
+
+.content{
+    .row{
+        display: flex;
+        flex-direction: row;
+        .frog-pic{
+            width: 60%;
+        }
+        .statistics{
+            background-color: antiquewhite;
+            width: 40%;
+            text-align: center;
         }
     }
 }

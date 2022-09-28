@@ -22,18 +22,36 @@
                 </ul>
             </div>
             <div class="content">
-                <div class="frog-pic">
-
-                </div>
-                <div class="statistics">
-                    <ul>
-                        <li>Statystyki Żaby</li>
-                        <li>Poziom: </li>
-                        <li>Zdrowie: </li>
-                        <li>Siła: </li>
-                        <li>Lepkość: </li>
-                        <li>Słodkość: </li>
-                    </ul>
+                <div class="row">
+                    <div class="frog-pic">
+                        <div class="background"></div>
+                        <div class="frog"></div>
+                        <div class="armor"></div>
+                    </div>
+                    <div class="statistics">
+                        <h2>Tomisław</h2>
+                        <div class="currency">
+                            <p>Posiadasz ??? Frogonet</p>
+                        </div>
+                        <table>
+                            <thead>
+                                <th>Statystyka</th>
+                                <th>Wartość</th>
+                            </thead>
+                            <tr>
+                                <td>STR</td>
+                                <td>10 (+10)</td>
+                            </tr>
+                            <tr>
+                                <td>WIT</td>
+                                <td>10 (+15)</td>
+                            </tr>
+                            <tr>
+                                <td>LEP</td>
+                                <td>10 (+1)</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

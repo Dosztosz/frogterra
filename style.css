@@ -136,9 +136,23 @@ button {
           justify-content: right;
 }
 
-.container .main .content {
+.content .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .row .frog-pic {
+  width: 60%;
+}
+
+.content .row .statistics {
+  background-color: antiquewhite;
+  width: 40%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
