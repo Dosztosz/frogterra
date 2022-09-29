@@ -13,25 +13,24 @@
         </ul>
     </div>
     <div class="container">
-        <div class="navbar">
+        <div class="hp-bar">
             <ul>
-                <li><a>Mapa</a></li>
-                <li><a>Misje</a></li>
-                <li><a>Surowce</a></li>
-                <li><a>Żaba</a></li>
-                <li><a>Ustawienia</a></li>
+                <li>Nazwa Żaby</li>
+                <li>Masz 1 Nowych Wiadomości</li>
+                <li>(1) Handel</li>
             </ul>
         </div>
         <div class="main">
-            <div class="info-bar">
+            <div class="navbar">
                 <ul>
-                    <li>Witaj ?Player?</li>
-                    <li><img src="#" alt="#"></li>
-                    <li><a href="#">Ustawienia</a></li>
-                    <li><a href="#">Wyloguj</a></li>
+                    <li><a>Mapa</a></li>
+                    <li><a>Misje</a></li>
+                    <li><a>Surowce</a></li>
+                    <li><a>Żaba</a></li>
+                    <li><a>Ustawienia</a></li>
                 </ul>
             </div>
-            <div class="content">
+            <div class="menu">
                 <div class="row">
                     <div class="frog-pic">
                         <div class="background"></div>
@@ -39,7 +38,6 @@
                         <div class="armor"></div>
                     </div>
                     <div class="statistics">
-                        <h2>Tomisław</h2>
                         <div class="currency">
                             <p>Posiadasz ??? Frogonet</p>
                         </div>
