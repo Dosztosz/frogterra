@@ -2,6 +2,16 @@
 <html lang="en">
 <?php require "head.php";?>
 <body>
+    <div class="infos">
+        <ul>
+            <li>Witaj: </li>
+            <li>Ranking (1)</li>
+            <li>Znajomi</li>
+            <li>Ustawienia</li>
+            <li>Support</li>
+            <li>Wyloguj</li>
+        </ul>
+    </div>
     <div class="container">
         <div class="navbar">
             <ul>
@@ -56,5 +66,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>

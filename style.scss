@@ -74,6 +74,15 @@ button{
 
 //Main area
 
+.infos{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -105,6 +114,7 @@ button{
         }
     }
 }
+
 
 .content{
     .row{
