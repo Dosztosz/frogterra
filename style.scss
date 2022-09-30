@@ -4,6 +4,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'VT323';
+    background-image: url('background.jpg');
+    background-size: cover;
 }
 //global statements
 ul{
@@ -13,6 +15,10 @@ ul{
 }
 a{
     text-decoration: none;
+    color: black;
+    &:hover{
+        color: #733e38;
+    }
 }
 
 
@@ -41,7 +47,6 @@ form{
 }
 
 form *{
-    font-family: 'Poppins',sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
@@ -78,6 +83,10 @@ button{
 
 //upper menu
 .infos{
+    padding: 5px;
+    background-color: #ead4aa;
+    border-bottom: 5px solid #733e38;
+
     ul{
         display: flex;
         justify-content: space-around;
@@ -86,36 +95,49 @@ button{
 
 }
 
+
+//title screen
+
+.title{
+    margin-top: 1vw;
+    text-align: center;
+    h1{
+        font-size: 4rem;
+        margin: 0;
+    }
+}
+
 //content
 .hp-bar{
-    width: 900px;
-    margin: 20px;
-    padding: 20px;
+    width: 850px;
+    margin-bottom: 30px;
+    padding: 30px;
+    span{
+        color:red;
+    }
     ul{
         display: flex;
         justify-content: center;
         li{
             margin-left: 60px;
             font-size: 1.5rem;
-            color:white;
+            color:black;
         }
     }
 }
 
 .background-pixel{
-    background-color: #4e4a4e;
-    border: 5px solid #d27d2c;
-    outline: 2px dotted #854c30;
-    box-shadow: 1px 2px 2px 2px #382014;
-    box-shadow:  inset 5px 5px #442434;
+    background-color: #ead4aa;
+    border: 5px solid #733e38;
+    outline: 3px solid #4d2a26;
+    box-shadow: 1px 2px 2px 2px #382014,
+                inset 3px 3px #c07956;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    background-color: antiquewhite;
     .main{
         width: 900px;
         display: flex;
@@ -133,6 +155,7 @@ button{
                 background-color: #854c30;
                 box-shadow: 1px 2px 2px 2px #382014;
                 &:hover{
+                    color: white;
                     background-color: #d27d2c;
                     box-shadow: 1px 2px 2px 2px #854f1b;
                 }
@@ -143,10 +166,38 @@ button{
             margin-left: 20px;
             width: 700px;
             padding: 20px;
-            color: white;
+            color: black;
         }
     }
 }
 .head-space{
-    margin-top: 5vw;
+    margin-top: 1vw;
+}
+.mission {
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    .col-main{
+        width: 60%;
+        span{
+            font-size: 1.4rem;
+        }
+    }
+    .col-exp{
+        width: 40%;
+        p{
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        button{
+            font-family: 'VT323';
+            margin: 0;
+            width: 100px;
+            height: 50px;
+
+        } 
+    }
 }

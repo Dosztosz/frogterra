@@ -46,7 +46,9 @@ pre {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'VT323';
+  font-family: "VT323";
+  background-image: url("background.jpg");
+  background-size: cover;
 }
 
 ul {
@@ -57,6 +59,10 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #733e38;
 }
 
 label {
@@ -71,21 +77,18 @@ form {
   width: 400px;
   background-color: rgba(255, 255, 255, 0.13);
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   border-radius: 10px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-          box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 50px 35px;
 }
 
 form * {
-  font-family: 'Poppins',sans-serif;
   color: #ffffff;
   letter-spacing: 0.5px;
   outline: none;
@@ -104,15 +107,11 @@ input {
   font-weight: 300;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
   color: #e5e5e5;
 }
 
 :-ms-input-placeholder {
-  color: #e5e5e5;
-}
-
-::-ms-input-placeholder {
   color: #e5e5e5;
 }
 
@@ -132,103 +131,116 @@ button {
   cursor: pointer;
 }
 
+.infos {
+  padding: 5px;
+  background-color: #ead4aa;
+  border-bottom: 5px solid #733e38;
+}
 .infos ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   list-style: none;
 }
 
+.title {
+  margin-top: 1vw;
+  text-align: center;
+}
+.title h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
 .hp-bar {
-  width: 900px;
-  margin: 20px;
-  padding: 20px;
+  width: 850px;
+  margin-bottom: 30px;
+  padding: 30px;
 }
-
+.hp-bar span {
+  color: red;
+}
 .hp-bar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .hp-bar ul li {
   margin-left: 60px;
   font-size: 1.5rem;
-  color: white;
+  color: black;
 }
 
 .background-pixel {
-  background-color: #4e4a4e;
-  border: 5px solid #d27d2c;
-  outline: 2px dotted #854c30;
-  -webkit-box-shadow: 1px 2px 2px 2px #382014;
-          box-shadow: 1px 2px 2px 2px #382014;
-  -webkit-box-shadow: inset 5px 5px #442434;
-          box-shadow: inset 5px 5px #442434;
+  background-color: #ead4aa;
+  border: 5px solid #733e38;
+  outline: 3px solid #4d2a26;
+  box-shadow: 1px 2px 2px 2px #382014, inset 3px 3px #c07956;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .main {
   width: 900px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .container .main .navbar {
   width: 200px;
   padding: 20px;
   text-align: left;
   color: white;
 }
-
 .container .main .navbar li {
   font-size: 1.5rem;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   padding: 15px 30px 15px 30px;
   margin: 15px 0px 0px 0px;
   background-color: #854c30;
-  -webkit-box-shadow: 1px 2px 2px 2px #382014;
-          box-shadow: 1px 2px 2px 2px #382014;
+  box-shadow: 1px 2px 2px 2px #382014;
 }
-
 .container .main .navbar li:hover {
+  color: white;
   background-color: #d27d2c;
-  -webkit-box-shadow: 1px 2px 2px 2px #854f1b;
-          box-shadow: 1px 2px 2px 2px #854f1b;
+  box-shadow: 1px 2px 2px 2px #854f1b;
 }
-
 .container .main .menu {
   margin-left: 20px;
   width: 700px;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 .head-space {
-  margin-top: 5vw;
+  margin-top: 1vw;
 }
-/*# sourceMappingURL=style.css.map */
+
+.mission {
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row .col-main {
+  width: 60%;
+}
+.row .col-main span {
+  font-size: 1.4rem;
+}
+.row .col-exp {
+  width: 40%;
+}
+.row .col-exp p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.row .col-exp button {
+  font-family: "VT323";
+  margin: 0;
+  width: 100px;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
