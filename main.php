@@ -12,7 +12,7 @@
             <li>Wyloguj</li>
         </ul>
     </div>
-    <div class="container">
+    <div class="container background-pixel head-space">
         <div class="hp-bar">
             <ul>
                 <li>Nazwa Żaby</li>
@@ -20,8 +20,10 @@
                 <li>(1) Handel</li>
             </ul>
         </div>
+    </div>
+    <div class="container">
         <div class="main">
-            <div class="navbar">
+            <div class="navbar background-pixel">
                 <ul>
                     <li><a>Mapa</a></li>
                     <li><a>Misje</a></li>
@@ -30,7 +32,7 @@
                     <li><a>Ustawienia</a></li>
                 </ul>
             </div>
-            <div class="menu">
+            <div class="menu background-pixel">
                 <div class="row">
                     <div class="frog-pic">
                         <div class="background"></div>
