@@ -9,28 +9,29 @@
     <?php get_title() ?>
     <?php get_info_bar() ?>
     <?php get_menu_bar() ?>
-        <div class="menu background-pixel">
+        <div class="menu background-pixel frog_pic">
             <div class="row">
-                <div class="statistics">
-                    <div class="currency">
-                        <p>Posiadasz ??? Frogonet</p>
-                    </div>
+                <div class="col">
+                    <img src="img/froggs/regular_frog.png" alt="">
+                </div>
+                <div class="col">
+                    <h2>Frogteusz</h2>
                     <table>
-                        <thead>
-                            <th>Statystyka</th>
-                            <th>Wartość</th>
-                        </thead>
                         <tr>
-                            <td>STR</td>
-                            <td>10 (+10)</td>
+                            <td>Zdrowie</td>
+                            <td>10</td>
                         </tr>
                         <tr>
-                            <td>WIT</td>
-                            <td>10 (+15)</td>
+                            <td>Siła</td>
+                            <td>10</td>
                         </tr>
                         <tr>
-                            <td>LEP</td>
-                            <td>10 (+1)</td>
+                            <td>Moc</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Lepkość</td>
+                            <td>10</td>
                         </tr>
                     </table>
                 </div>
