@@ -12,7 +12,7 @@
         <div class="menu background-pixel">
             <ul>
                 <li>
-                    <div class="mission">
+                    <div class="mission" id="1">
                         <div class="row">
                             <div class="col-main">
                                 <span>Ostatnio potężne krowy atakują nasze stawiki. Pokonaj waleczne krowy aby zapewnić nam bezpieczeństwo</span>
@@ -20,7 +20,7 @@
                             <div class="col-exp">
                                 <p>Poziom Trudności: Niski</p>
                                 <p>Nagroda: <span style="color: red;">1000 xp</span></p>
-                                <button>Wyruszaj</button>
+                                <button onclick="dissapear(1)">Wyruszaj</button>
                             </div>
                         </div>
                     </div>
