@@ -33,7 +33,7 @@
                             <div class="col-exp">
                                 <p>Poziom Trudności: Średni</p>
                                 <p>Nagroda: <span style="color: red;">2137 xp</span></p>
-                                <button>Wyruszaj</button>
+                                <button onclick="dissapear(1)">Wyruszaj</button>
                             </div>
                         </div>
                     </div></li>
@@ -45,7 +45,7 @@
                             <div class="col-exp">
                                 <p>Poziom Trudności: Wysoki</p>
                                 <p>Nagroda: <span style="color: red;">1000 xp</span></p>
-                                <button>Wyruszaj</button>
+                                <button onclick="dissapear(1)">Wyruszaj</button>
                             </div>
                         </div>
                     </div></li>
