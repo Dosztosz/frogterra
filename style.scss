@@ -236,24 +236,28 @@ button{
     background-color: #6fd297;
     &:hover{
         background-color: #90f7b9;
+        cursor: pointer;
     }
 }
 #pink{
     background-color: #d26fcd;
     &:hover{
         background-color: #ffacfb;
+        cursor: pointer;
     }
 }
 #blue{
     background-color: #6fa2d2;
     &:hover{
         background-color: #aad6ff;
+        cursor: pointer;
     }
 }
 #violet{
     background-color: #be6fd2;
     &:hover{
         background-color: #de92f1;
+        cursor: pointer;
     }
 }
 
@@ -276,4 +280,5 @@ button{
         height: 70px;
         margin: 3px;
     }
+
 }

@@ -330,6 +330,7 @@ button {
 
 #green:hover {
   background-color: #90f7b9;
+  cursor: pointer;
 }
 
 #pink {
@@ -338,6 +339,7 @@ button {
 
 #pink:hover {
   background-color: #ffacfb;
+  cursor: pointer;
 }
 
 #blue {
@@ -346,6 +348,7 @@ button {
 
 #blue:hover {
   background-color: #aad6ff;
+  cursor: pointer;
 }
 
 #violet {
@@ -354,6 +357,7 @@ button {
 
 #violet:hover {
   background-color: #de92f1;
+  cursor: pointer;
 }
 
 /*----------[Inventory]----------*/

@@ -1,14 +1,12 @@
-<?php require "build_functions.php"; ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 <?php require "head.php";?>
 <body>
-    <?php get_navbar() ?>
-    <?php get_title() ?>
-    <?php get_info_bar() ?>
-    <?php get_menu_bar() ?>
+<?php include('resources/templates/navbar.php') ?>
+    <?php include('resources/templates/title.php') ?>
+    <?php include('resources/templates/info_bar.php') ?>
+    <?php include('resources/templates/menu.php') ?>
         <div class="menu background-pixel">
             <ul>
                 <li>
@@ -51,5 +49,5 @@
                     </div></li>
             </ul>
         </div>
-    <?php get_footer() ?>
+    <?php include('resources/templates/footer.php') ?>
 </html>
