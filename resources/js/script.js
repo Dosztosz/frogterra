@@ -27,6 +27,10 @@ function changeFrog(color){
             break;
         case 'pink':
             frog = "pink_frog.png";
+            break;
+        case 'blue':
+            frog = "blue_frog.png";
+            break;
         default:
           console.log(`Sorry, we are out of.`);
       }
