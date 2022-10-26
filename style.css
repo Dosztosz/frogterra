@@ -46,7 +46,7 @@ pre {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'VT323';
+  font-family: "VT323";
   background-image: url("background.jpg");
   background-size: cover;
 }
@@ -61,46 +61,8 @@ a {
   text-decoration: none;
   color: black;
 }
-
 a:hover {
   color: #733e38;
-}
-
-.jump:hover {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-animation: jump 1s linear alternate;
-          animation: jump 1s linear alternate;
-}
-
-@-webkit-keyframes jump {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  40% {
-    -webkit-transform: translate3d(0, -5%, 0);
-            transform: translate3d(0, -5%, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes jump {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  40% {
-    -webkit-transform: translate3d(0, -5%, 0);
-            transform: translate3d(0, -5%, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
 }
 
 label {
@@ -115,16 +77,14 @@ form {
   width: 400px;
   background-color: rgba(255, 255, 255, 0.13);
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   border-radius: 10px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-          box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 50px 35px;
 }
 
@@ -147,15 +107,11 @@ input {
   font-weight: 300;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
   color: #e5e5e5;
 }
 
 :-ms-input-placeholder {
-  color: #e5e5e5;
-}
-
-::-ms-input-placeholder {
   color: #e5e5e5;
 }
 
@@ -180,13 +136,9 @@ button {
   background-color: #ead4aa;
   border-bottom: 5px solid #733e38;
 }
-
 .infos ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -194,34 +146,26 @@ button {
   margin-top: 1vw;
   text-align: center;
 }
-
 .title h1 {
   font-size: 4rem;
   margin: 0;
 }
 
 .hp-bar {
-  width: 850px;
-  margin-bottom: 30px;
-  padding: 30px;
+  width: 65rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
-
 .hp-bar span {
   color: red;
 }
-
 .hp-bar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: space-around;
 }
-
 .hp-bar ul li {
-  margin-left: 60px;
-  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
   color: black;
 }
 
@@ -229,66 +173,41 @@ button {
   background-color: #ead4aa;
   border: 5px solid #733e38;
   outline: 3px solid #4d2a26;
-  -webkit-box-shadow: 1px 2px 2px 2px #382014, inset 3px 3px #c07956;
-          box-shadow: 1px 2px 2px 2px #382014, inset 3px 3px #c07956;
+  box-shadow: 1px 2px 2px 2px #382014, inset 3px 3px #c07956;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .main {
-  width: 1100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-
 .container .main .navbar {
-  width: 200px;
-  padding: 20px;
+  width: 10rem;
+  padding: 1.5rem;
   text-align: left;
   color: white;
 }
-
 .container .main .navbar li {
-  font-size: 1.5rem;
-  -webkit-transition: 0.2s;
+  font-size: 1.2rem;
   transition: 0.2s;
   padding: 15px 30px 15px 30px;
   margin: 15px 0px 0px 0px;
-  background-color: #854c30;
-  -webkit-box-shadow: 1px 2px 2px 2px #382014;
-          box-shadow: 1px 2px 2px 2px #382014;
+  background-color: #c07956;
+  box-shadow: 0px 2px 2px 2px #382014;
 }
-
 .container .main .navbar li:hover {
-  color: white;
-  background-color: #d27d2c;
-  -webkit-box-shadow: 1px 2px 2px 2px #854f1b;
-          box-shadow: 1px 2px 2px 2px #854f1b;
+  color: black;
+  background-color: #a36546;
+  transform: scaleX(105%);
 }
-
 .container .main .menu {
-  margin-left: 20px;
-  width: 1000px;
+  margin-left: 1rem;
+  width: 50rem;
   padding: 20px;
   color: black;
-}
-
-.head-space {
-  margin-top: 1vw;
 }
 
 .mission {
@@ -298,70 +217,57 @@ button {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .row .col-main {
-  width: 60%;
+  width: 25rem;
 }
-
 .row .col-main span {
   font-size: 1.4rem;
 }
-
 .row .col-exp {
   width: 40%;
 }
-
 .row .col-exp td {
   font-size: 1.5rem;
 }
-
 .row .col-exp p {
   margin: 0;
   font-size: 1.5rem;
 }
-
 .row .col-exp button {
-  font-family: 'VT323';
+  font-family: "VT323";
   margin: 0.1rem;
   width: 6rem;
   height: 1;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .row .col-exp button:hover {
   background-color: #e0e0e0;
   color: red;
-  -webkit-transform: scale(110%);
-          transform: scale(110%);
+  transform: scale(110%);
   border-radius: 0px;
 }
 
-.frog_pic img {
-  width: 500px;
-  width: 500px;
+/*----------Frog Customization----------*/
+.character {
+  margin: 0;
+  padding: 0;
+}
+.character img {
+  width: 25rem;
+  width: 25rem;
 }
 
 .statistics {
   width: 60%;
 }
 
-/*----------Frog Customization----------*/
 .apperiance-bar {
-  width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+  width: 25rem;
   display: inline-flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .apperiance {
@@ -372,18 +278,15 @@ button {
   vertical-align: center;
   text-align: center;
   font-size: 1.5rem;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .apperiance:hover {
-  border-radius: 5px;
+  transform: scale(105%);
 }
 
 #green {
   background-color: #6fd297;
 }
-
 #green:hover {
   background-color: #90f7b9;
   cursor: pointer;
@@ -392,7 +295,6 @@ button {
 #pink {
   background-color: #d26fcd;
 }
-
 #pink:hover {
   background-color: #ffacfb;
   cursor: pointer;
@@ -401,7 +303,6 @@ button {
 #blue {
   background-color: #6fa2d2;
 }
-
 #blue:hover {
   background-color: #aad6ff;
   cursor: pointer;
@@ -410,7 +311,6 @@ button {
 #violet {
   background-color: #be6fd2;
 }
-
 #violet:hover {
   background-color: #de92f1;
   cursor: pointer;
@@ -419,32 +319,66 @@ button {
 /*----------[Inventory]----------*/
 .center-title {
   text-align: center;
-  font-size: 40px;
-}
-
-.col-exp {
-  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 .inventory {
-  width: 300px;
+  margin: 1rem;
+  width: 20rem;
+  align-items: center;
+  text-align: center;
 }
-
 .inventory .item {
   display: inline-block;
   width: 70px;
   height: 70px;
   margin: 3px;
   background-color: #c07956;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .inventory .item:hover {
   background-color: #a36546;
 }
 
+.statistics {
+  margin: 1rem;
+  width: 20rem;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.statistics td {
+  border-top: 2px solid black;
+}
+
 /*----------[test]----------*/
+#item_0 {
+  background-image: url("img/helmet.webp");
+  background-size: cover;
+}
+
+#item_1 {
+  background-image: url("img/chestplate.webp");
+  background-size: cover;
+}
+
+#item_2 {
+  background-image: url("img/leggins.webp");
+  background-size: cover;
+}
+
+#item_3 {
+  background-image: url("img/boots.webp");
+  background-size: cover;
+}
+
+#item_4 {
+  background-image: url("img/sword.webp");
+  background-size: cover;
+}
+
 .popup {
   position: relative;
   display: inline-block;
@@ -499,7 +433,6 @@ button {
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -507,5 +440,4 @@ button {
   to {
     opacity: 1;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
