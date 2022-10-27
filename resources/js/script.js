@@ -42,3 +42,8 @@ function popUp(item) {
     var popup = document.getElementById(item);
     popup.classList.toggle("show");
   }
+
+  function popOut(item) {
+    var popup = document.getElementById(item);
+    popup.classList.toggle("hide");
+  }

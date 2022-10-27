@@ -1,11 +1,16 @@
+@import "battle.scss";
+
 h1 { font-family: VT323; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: VT323; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: VT323; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: VT323; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: VT323; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'VT323';
+    font-size: 1.2rem;
     background-image: url('background.jpg');
-    background-size: cover;
+    background-size:auto;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 //global statements
 ul{
@@ -21,17 +26,10 @@ a{
     }
 }
 
-// Login data
-label{
-    display: block;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-}
 
-form{
-    height: 520px;
-    width: 400px;
+.login-form{
+    height: 50vw;
+    width: 50vw;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -42,28 +40,33 @@ form{
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
-}
+    *{
+        color: black;
+        letter-spacing: 0.5px;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;}
+    input{
+            display: block;
+            font-family: 'VT323';
+            height: 2rem;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.479);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    ::placeholder{
+            color: #e5e5e5;
+        }
 
-form *{
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    outline: none;
-    border: none;
-}
-input{
-    display: block;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-}
-::placeholder{
-    color: #e5e5e5;
-}
+
+    }
+
+
+
 button{
     margin-top: 50px;
     width: 100%;
@@ -107,7 +110,7 @@ button{
 
 //content
 
-.hp-bar{
+.top-bar{
     width: 65rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -321,7 +324,7 @@ button{
     }
 }
 
-/*----------[test]----------*/
+/*----------[Inventory Objects]----------*/
 
 
 #item_0{
@@ -345,7 +348,7 @@ button{
     background-size: cover;
 }
 
-
+/*----------[Inventory Statistics]----------*/
 .popup {
     position: relative;
     display: inline-block;
@@ -360,7 +363,8 @@ button{
   .popup .popuptext {
     visibility: hidden;
     width: 160px;
-    background-color: #555;
+    background-color: #a36546;
+    border: 1px solid #4d2a26;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -372,23 +376,14 @@ button{
     margin-left: -80px;
   }
   
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
   /* Toggle this class - hide and show the popup */
   .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+  }
+  .popup .hide {
+    visibility: hidden;
   }
   
   /* Add animation (fade in the popup) */
@@ -401,3 +396,41 @@ button{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+
+  /*--------------[Background Animation]--------------*/
+  .cloud{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-image: url('img/cloud.png');
+    background-size: cover;
+}
+
+#cloud_1{
+    top: 5rem;
+    left: -18vw;
+    animation: cloud_1 30s infinite;
+}
+#cloud_2{
+    top: 10rem;
+    left: 100vw;
+    animation: cloud_2 30s infinite;
+}
+
+@keyframes cloud_1{
+    from {
+        
+    }
+    to {
+        transform: translateX(130vw);
+    }
+}
+@keyframes cloud_2{
+    from {
+        
+    }
+    to {
+        transform: translateX(-130vw);
+    }
+}
