@@ -39,3 +39,7 @@ function enemyAttack(){
     document.getElementById("m_char").classList.add("get-hit");
     document.getElementById("m_char_damage").innerHTML = e_char_attack;
 }
+
+function damageGenerator(min, max){
+    var damage = Math.floor(Math.random() * (max-min)+min);
+}
