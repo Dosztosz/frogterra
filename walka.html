@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            animation: ruszanie 1s;
+            cursor: pointer;
+            
+        }
+
+        @-webkit-keyframes  ruszanie {
+            from{
+                top:0px;
+            }
+            to {
+                top: 100px;
+            }
+        }
+
+        @keyframes ruszanie {
+            from{
+                top:0px;
+            }
+            to {
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="block" id="block_1" onclick="attack()">
+        </div>
+    </div>
+
+    <script>
+        function attack(){
+            document.getElementById("block_1").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
