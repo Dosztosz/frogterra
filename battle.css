@@ -5,11 +5,8 @@
 }
 
 .battle-arena-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .character-window {
@@ -39,12 +36,11 @@
 
 @-webkit-keyframes damage {
   0% {
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
+    transform: scale(100%);
   }
   50% {
-    -webkit-transform: scale(110%);
-            transform: scale(110%);
+    transform: scale(110%);
+    transform: rotate(90deg);
   }
   100% {
     top: 0;
@@ -53,15 +49,13 @@
 
 @keyframes damage {
   0% {
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
+    transform: scale(100%);
   }
   50% {
-    -webkit-transform: scale(110%);
-            transform: scale(110%);
+    transform: scale(110%);
+    transform: rotate(90deg);
   }
   100% {
     top: 0;
   }
-}
-/*# sourceMappingURL=battle.css.map */
+}/*# sourceMappingURL=battle.css.map */
