@@ -26,47 +26,6 @@ a{
     }
 }
 
-
-.login-form{
-    height: 50vw;
-    width: 50vw;
-    background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
-    *{
-        color: black;
-        letter-spacing: 0.5px;
-        font-size: 1.2rem;
-        outline: none;
-        border: none;}
-    input{
-            display: block;
-            font-family: 'VT323';
-            height: 2rem;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.479);
-            border-radius: 3px;
-            padding: 0 10px;
-            margin-top: 8px;
-            font-size: 14px;
-            font-weight: 300;
-        }
-    ::placeholder{
-            color: #e5e5e5;
-        }
-
-
-    }
-
-
-
 button{
     margin-top: 50px;
     width: 100%;
@@ -78,55 +37,72 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-//
 
-//Main area
+//navbar
 
-//upper menu
-.infos{
-    padding: 5px;
-    background-color: #ead4aa;
-    border-bottom: 5px solid #733e38;
+header{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+    color: white;
+}
 
+.top-bar{
+    margin: 0;
+    padding: 0;
+    p{
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-size: 2rem;
+        span{
+            font-size: 1rem;
+        }
+    }
+}
+
+nav{
     ul{
         display: flex;
-        justify-content: space-around;
-        list-style: none;
+        gap: 20px;
     }
-
+    li{
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        transition: 0.2s;
+        width: 100px;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        
+        margin: 15px 0px 0px 0px;
+        background-color: #362313;
+        box-shadow: 0px 0px 0px 4px #5b4112;
+        color: rgb(142, 142, 142);
+        &.active{
+            background-color: #794e25;
+            box-shadow: 0px 0px 0px 4px #fce448;
+            color: white;
+            transform: scaleX(103%);
+        }
+        &:hover{
+            background-color: #794e25;
+            box-shadow: 0px 0px 0px 4px #fce448;
+            color: white;
+            transform: scaleX(103%);
+        }
+        
+    }
 }
+
 
 
 //title screen
 
-.title{
-    margin-top: 1vw;
-    text-align: center;
-    h1{
-        font-size: 4rem;
-        margin: 0;
-    }
-}
-
 //content
-
-.top-bar{
-    width: 65rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    span{
-        color:red;
-    }
-    ul{
-        display: flex;
-        justify-content: space-around;
-        li{
-            margin-left: 1rem;
-            font-size: 1.2rem;
-            color:black;
-        }
-    }
-}
 
 .background-pixel{
     background-color: #ead4aa;
@@ -142,26 +118,6 @@ button{
     align-items: center;
     .main{
         display: flex;
-        .navbar{
-            width: 10rem;
-            padding: 1.5rem;
-            text-align: left;
-            color: white;
-            li{
-                font-size: 1.2rem;
-                transition: 0.2s;
-                padding: 15px 30px 15px 30px;
-                margin: 15px 0px 0px 0px;
-                background-color: #c07956;
-                box-shadow: 0px 2px 2px 2px #382014;
-                &:hover{
-                    color: black;
-                    background-color: #a36546;
-                    transform: scaleX(105%);
-                }
-            }
-            
-        }
         .menu {
             margin-left: 1rem;
             width: 50rem;
@@ -170,10 +126,22 @@ button{
         }
     }
 }
+
 .mission {
     margin: 1rem;
     padding: 1rem;
     border: 2px solid black;
+}
+.profile_showcase{
+    max-width: 15rem;
+    p{
+        font-size: 1.2rem;
+    }
+    div{
+        text-align: center;
+        margin: 10px 0px;
+        padding: 10px;
+    }
 }
 .row{
     display: flex;
@@ -231,56 +199,6 @@ button{
 }
 
 
-.apperiance-bar{
-    width: 25rem;
-    display: inline-flex;
-    justify-content: space-around;
-}
-
-
-.apperiance{
-    height: 2.5rem;
-    width: 3.5rem;
-    margin: 9px;
-    padding: 5px;
-    vertical-align: center;
-    text-align: center;
-    font-size: 1.5rem;
-    transition: 0.3s;
-    &:hover{
-        transform: scale(105%)
-
-    }
-}
-
-#green{
-    background-color: #6fd297;
-    &:hover{
-        background-color: #90f7b9;
-        cursor: pointer;
-    }
-}
-#pink{
-    background-color: #d26fcd;
-    &:hover{
-        background-color: #ffacfb;
-        cursor: pointer;
-    }
-}
-#blue{
-    background-color: #6fa2d2;
-    &:hover{
-        background-color: #aad6ff;
-        cursor: pointer;
-    }
-}
-#violet{
-    background-color: #be6fd2;
-    &:hover{
-        background-color: #de92f1;
-        cursor: pointer;
-    }
-}
 
 /*----------[Inventory]----------*/
 
@@ -321,6 +239,32 @@ button{
     font-size: 1.2rem;
     td{
         border-top: 2px solid black;
+    }
+}
+
+// Information-bar
+
+.info-bar{
+    display: flex;
+    
+    .image{
+        margin: 10px;
+        padding: 10px;
+        &.background-pixel{
+            background-color: #794e25;
+        }
+        img{
+            height: 50px;
+            width: auto;
+        }
+    }
+    .info-bar-text{
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        font-size: 1.2rem;
+        color: black;
     }
 }
 
@@ -398,39 +342,3 @@ button{
   }
 
 
-  /*--------------[Background Animation]--------------*/
-  .cloud{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    background-image: url('img/cloud.png');
-    background-size: cover;
-}
-
-#cloud_1{
-    top: 5rem;
-    left: -18vw;
-    animation: cloud_1 30s infinite;
-}
-#cloud_2{
-    top: 10rem;
-    left: 100vw;
-    animation: cloud_2 30s infinite;
-}
-
-@keyframes cloud_1{
-    from {
-        
-    }
-    to {
-        transform: translateX(130vw);
-    }
-}
-@keyframes cloud_2{
-    from {
-        
-    }
-    to {
-        transform: translateX(-130vw);
-    }
-}

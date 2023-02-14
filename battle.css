@@ -30,21 +30,7 @@
 }
 
 .get-hit {
-  -webkit-animation: damage 0.5s;
-          animation: damage 0.5s;
-}
-
-@-webkit-keyframes damage {
-  0% {
-    transform: scale(100%);
-  }
-  50% {
-    transform: scale(110%);
-    transform: rotate(90deg);
-  }
-  100% {
-    top: 0;
-  }
+  animation: damage 0.5s;
 }
 
 @keyframes damage {

@@ -30,20 +30,7 @@
 }
 
 .get-hit {
-  -webkit-animation: damage 0.5s;
-          animation: damage 0.5s;
-}
-
-@-webkit-keyframes damage {
-  0% {
-    transform: scale(100%);
-  }
-  50% {
-    transform: scale(110%);
-  }
-  100% {
-    top: 0;
-  }
+  animation: damage 0.5s;
 }
 
 @keyframes damage {
@@ -52,6 +39,7 @@
   }
   50% {
     transform: scale(110%);
+    transform: rotate(90deg);
   }
   100% {
     top: 0;
@@ -127,50 +115,6 @@ a:hover {
   color: #733e38;
 }
 
-.login-form {
-  height: 50vw;
-  width: 50vw;
-  background-color: rgba(255, 255, 255, 0.13);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding: 50px 35px;
-}
-.login-form * {
-  color: black;
-  letter-spacing: 0.5px;
-  font-size: 1.2rem;
-  outline: none;
-  border: none;
-}
-.login-form input {
-  display: block;
-  font-family: "VT323";
-  height: 2rem;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.479);
-  border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 300;
-}
-.login-form ::-moz-placeholder {
-  color: #e5e5e5;
-}
-.login-form :-ms-input-placeholder {
-  color: #e5e5e5;
-}
-.login-form ::placeholder {
-  color: #e5e5e5;
-}
-
 button {
   margin-top: 50px;
   width: 100%;
@@ -183,42 +127,58 @@ button {
   cursor: pointer;
 }
 
-.infos {
-  padding: 5px;
-  background-color: #ead4aa;
-  border-bottom: 5px solid #733e38;
-}
-.infos ul {
+header {
+  padding: 1.5rem;
   display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.title {
-  margin-top: 1vw;
-  text-align: center;
-}
-.title h1 {
-  font-size: 4rem;
-  margin: 0;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+  color: white;
 }
 
 .top-bar {
-  width: 65rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
 }
-.top-bar span {
-  color: red;
-}
-.top-bar ul {
-  display: flex;
-  justify-content: space-around;
-}
-.top-bar ul li {
-  margin-left: 1rem;
-  font-size: 1.2rem;
+.top-bar p {
+  margin: 0;
+  padding: 0;
   color: black;
+  font-size: 2rem;
+}
+.top-bar p span {
+  font-size: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav li {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: 0.2s;
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+  background-color: #362313;
+  box-shadow: 0px 0px 0px 4px #5b4112;
+  color: rgb(142, 142, 142);
+}
+nav li.active {
+  background-color: #794e25;
+  box-shadow: 0px 0px 0px 4px #fce448;
+  color: white;
+  transform: scaleX(103%);
+}
+nav li:hover {
+  background-color: #794e25;
+  box-shadow: 0px 0px 0px 4px #fce448;
+  color: white;
+  transform: scaleX(103%);
 }
 
 .background-pixel {
@@ -236,25 +196,6 @@ button {
 .container .main {
   display: flex;
 }
-.container .main .navbar {
-  width: 10rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: white;
-}
-.container .main .navbar li {
-  font-size: 1.2rem;
-  transition: 0.2s;
-  padding: 15px 30px 15px 30px;
-  margin: 15px 0px 0px 0px;
-  background-color: #c07956;
-  box-shadow: 0px 2px 2px 2px #382014;
-}
-.container .main .navbar li:hover {
-  color: black;
-  background-color: #a36546;
-  transform: scaleX(105%);
-}
 .container .main .menu {
   margin-left: 1rem;
   width: 50rem;
@@ -266,6 +207,18 @@ button {
   margin: 1rem;
   padding: 1rem;
   border: 2px solid black;
+}
+
+.profile_showcase {
+  max-width: 15rem;
+}
+.profile_showcase p {
+  font-size: 1.2rem;
+}
+.profile_showcase div {
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px;
 }
 
 .row {
@@ -316,58 +269,6 @@ button {
   width: 60%;
 }
 
-.apperiance-bar {
-  width: 25rem;
-  display: inline-flex;
-  justify-content: space-around;
-}
-
-.apperiance {
-  height: 2.5rem;
-  width: 3.5rem;
-  margin: 9px;
-  padding: 5px;
-  vertical-align: center;
-  text-align: center;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-.apperiance:hover {
-  transform: scale(105%);
-}
-
-#green {
-  background-color: #6fd297;
-}
-#green:hover {
-  background-color: #90f7b9;
-  cursor: pointer;
-}
-
-#pink {
-  background-color: #d26fcd;
-}
-#pink:hover {
-  background-color: #ffacfb;
-  cursor: pointer;
-}
-
-#blue {
-  background-color: #6fa2d2;
-}
-#blue:hover {
-  background-color: #aad6ff;
-  cursor: pointer;
-}
-
-#violet {
-  background-color: #be6fd2;
-}
-#violet:hover {
-  background-color: #de92f1;
-  cursor: pointer;
-}
-
 /*----------[Inventory]----------*/
 .center-title {
   text-align: center;
@@ -405,6 +306,29 @@ button {
   border-top: 2px solid black;
 }
 
+.info-bar {
+  display: flex;
+}
+.info-bar .image {
+  margin: 10px;
+  padding: 10px;
+}
+.info-bar .image.background-pixel {
+  background-color: #794e25;
+}
+.info-bar .image img {
+  height: 50px;
+  width: auto;
+}
+.info-bar .info-bar-text {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+  color: black;
+}
+
 /*----------[Inventory Objects]----------*/
 #item_0 {
   background-image: url("img/helmet.webp");
@@ -438,7 +362,6 @@ button {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -462,7 +385,6 @@ button {
 /* Toggle this class - hide and show the popup */
 .popup .show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
@@ -471,63 +393,11 @@ button {
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-/*--------------[Background Animation]--------------*/
-.cloud {
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  background-image: url("img/cloud.png");
-  background-size: cover;
-}
-
-#cloud_1 {
-  top: 5rem;
-  left: -18vw;
-  -webkit-animation: cloud_1 30s infinite;
-          animation: cloud_1 30s infinite;
-}
-
-#cloud_2 {
-  top: 10rem;
-  left: 100vw;
-  -webkit-animation: cloud_2 30s infinite;
-          animation: cloud_2 30s infinite;
-}
-
-@-webkit-keyframes cloud_1 {
-  to {
-    transform: translateX(130vw);
-  }
-}
-
-@keyframes cloud_1 {
-  to {
-    transform: translateX(130vw);
-  }
-}
-@-webkit-keyframes cloud_2 {
-  to {
-    transform: translateX(-130vw);
-  }
-}
-@keyframes cloud_2 {
-  to {
-    transform: translateX(-130vw);
   }
 }/*# sourceMappingURL=style.css.map */
