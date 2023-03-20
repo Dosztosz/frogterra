@@ -20,12 +20,12 @@
 }
 
 #m_char {
-  background-image: url("img/froggs/regular_frog.png");
+  background-image: url("../../img/froggs/regular_frog.png");
   background-size: cover;
 }
 
 #e_char {
-  background-image: url("img/froggs/pink_frog.png");
+  background-image: url("../../img/froggs/pink_frog.png");
   background-size: cover;
 }
 
@@ -38,10 +38,11 @@
     transform: scale(100%);
   }
   50% {
-    transform: scale(110%);
-    transform: rotate(90deg);
+    transform: scale(115%);
+    transform: rotate(10deg);
   }
   100% {
+    transform: scale(100%);
     top: 0;
   }
 }
@@ -91,12 +92,12 @@ pre {
 }
 
 body {
-  margin: 0;
+  margin: 100px;
   padding: 0;
   font-family: "VT323";
   font-size: 1.2rem;
   background-image: url("../../img/background.jpg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
