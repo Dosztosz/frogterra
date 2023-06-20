@@ -11,7 +11,7 @@ function Attack(attack){
         playerAttack(attack);
         setTimeout(function(){enemyAttack();},750);
         setTimeout(function(){document.getElementById("m_char").classList.remove("get-hit");document.getElementById("e_char").classList.remove("get-hit");},2000);
-        setTimeout(function(){Attack(attack);},2500);
+        setTimeout(function(){Attack(attack);},800);
     }
     else if(hp < 0){
         $('.battle-arena').html('<h1>Przegrałeś</h1>');

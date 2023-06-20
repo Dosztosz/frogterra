@@ -22,6 +22,6 @@
     </div>
     <?php 
         echo '<script type="text/javascript">',
-                'Attack(10);',
+                'Attack(15);',
                 '</script>';
 ?>
