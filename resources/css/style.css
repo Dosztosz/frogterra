@@ -332,27 +332,27 @@ nav li:hover {
 
 /*----------[Inventory Objects]----------*/
 #item_0 {
-  background-image: url("img/helmet.webp");
+  background-image: url("../../img/helmet.webp");
   background-size: cover;
 }
 
 #item_1 {
-  background-image: url("img/chestplate.webp");
+  background-image: url("../../img/chestplate.webp");
   background-size: cover;
 }
 
 #item_2 {
-  background-image: url("img/leggins.webp");
+  background-image: url("../../img/leggins.webp");
   background-size: cover;
 }
 
 #item_3 {
-  background-image: url("img/boots.webp");
+  background-image: url("../../img/boots.webp");
   background-size: cover;
 }
 
 #item_4 {
-  background-image: url("img/sword.webp");
+  background-image: url("../../img/sword.webp");
   background-size: cover;
 }
 

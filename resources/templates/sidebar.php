@@ -3,8 +3,8 @@
                 <h2>Informacje</h2>
             </div>
             <div class="background-pixel">
-                <p>Frogteusz</p>
-                <p>LvL. 5</p>
+                <p><?php $player_name ?></p>
+                <p>LvL. <?php echo $player_lvl ?></p>
                 <img src="" alt="">
             </div>
             <div class="background-pixel">

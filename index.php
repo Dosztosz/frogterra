@@ -1,6 +1,12 @@
 <?php
  session_start(); 
- 
+    $player_id = 1;
+    $player_lvl = 10;
+    $player_name = "Dosztosz";
+    $player_exp = 1954;
+    $player_needed_exp = 2000;
+    $database_connect;
+
 ?>
 
 
