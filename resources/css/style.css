@@ -138,8 +138,9 @@ header {
 }
 
 .top-bar {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
 }
 .top-bar p {
   margin: 0;

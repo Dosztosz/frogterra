@@ -6,6 +6,10 @@
                     <div class="character">
                         <img id="main_frog" src="img/froggs/regular_frog.png" alt="">
                     </div>
+                    <div class="top-bar">
+                        <p>EXP <span>(<?php echo $player_exp ?> / <?php echo $player_needed_exp ?>)</span></p>
+                        <progress id="m_exp_char_bar" value="<?php echo $player_exp ?>" max="<?php echo $player_needed_exp ?>"></progress>
+                    </div>
                 </div>
                 <div>
                     <h2 class="center-title">Inventory</h1>
@@ -55,3 +59,4 @@
                     </table>
                 </div>
             </div>
+            <?php require_once "resources/templates/tips.php"; ?>

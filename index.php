@@ -4,7 +4,7 @@
 require "resources/config/config.php";
 // Create connection
 $conn = new mysqli($db_host, $db_user, $db_password, $db_name);
-
+$site;
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -76,7 +76,6 @@ if ($result->num_rows > 0) {
             <?php 
                 if(isset($_GET['site'])){
                     $site = $_GET['site'];
-
                     switch ($site){
 
                         case "fight":
@@ -96,7 +95,6 @@ if ($result->num_rows > 0) {
 
 
             ?>
-            <?php require_once "resources/templates/tips.php"; ?>
         </div>
     </div>
 </div>
