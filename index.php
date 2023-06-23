@@ -15,14 +15,16 @@ $sql = "SELECT players.player_username,
         players_lvl.player_exp, players_lvl.player_lvl, 
         helmets.helmet_name, helmets.helmet_hp, helmets.helmet_str, helmets.helmet_pow, helmets.helmet_sti,
         armors.armor_name, armors.armor_hp, armors.armor_str, armors.armor_sti,
-        weapons.weapon_name, weapons.weapon_str, weapons.weapon_atk_min, weapons.weapon_atk_max
-
+        weapons.weapon_name, weapons.weapon_str, weapons.weapon_atk_min, weapons.weapon_atk_max,
+        players_mission.player_mission_status, players_mission.player_mission_time
+        
         FROM players
         INNER JOIN players_lvl ON players.player_id=players_lvl.player_id 
         INNER JOIN players_eq ON players_eq.player_id = players.player_id
         INNER JOIN helmets ON players_eq.helmet_id = helmets.helmet_id
         INNER JOIN armors ON players_eq.armor_id = armors.armor_id
         INNER JOIN weapons ON players_eq.weapon_id = weapons.weapon_id
+        INNER JOIN players_mission ON players.player_id = players_mission.player_id
         WHERE players.player_id = 1 
         ";
 $result = $conn->query($sql);
@@ -45,6 +47,9 @@ while($row = $result->fetch_assoc()) {
     $weapon_atk_min = $row['weapon_atk_min'];
     $weapon_atk_max = $row['weapon_atk_max'];
     $weapon_str = $row['weapon_str'];
+
+    $mission_status = $row['mission_status'];
+    $mission_time = $row['player_mission_time'];
     
 
     $sum_attack_min = ceil(($helmet_str + $armor_str + $weapon_str )*1.2 + $weapon_atk_min);
