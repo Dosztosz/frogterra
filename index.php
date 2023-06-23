@@ -17,7 +17,7 @@ $sql = "SELECT players.player_username,
         armors.armor_name, armors.armor_hp, armors.armor_str, armors.armor_sti,
         weapons.weapon_name, weapons.weapon_str, weapons.weapon_atk_min, weapons.weapon_atk_max,
         players_mission.player_mission_status, players_mission.player_mission_time
-        
+
         FROM players
         INNER JOIN players_lvl ON players.player_id=players_lvl.player_id 
         INNER JOIN players_eq ON players_eq.player_id = players.player_id
@@ -48,7 +48,7 @@ while($row = $result->fetch_assoc()) {
     $weapon_atk_max = $row['weapon_atk_max'];
     $weapon_str = $row['weapon_str'];
 
-    $mission_status = $row['mission_status'];
+    $mission_status = $row['player_mission_status'];
     $mission_time = $row['player_mission_time'];
     
 

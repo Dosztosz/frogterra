@@ -1,13 +1,6 @@
-
-            <?php 
-                $current_date = 
-                $date = date_create('2023-06-23 15:00:00');
-                $mission_status = "done"
-            ?>
-
 <script>
 
-CountDownTimer('<?php echo date_format($date, 'Y-m-d H:i:s'); ?>', 'countdown');
+CountDownTimer('<?php echo $mission_time ?>', 'countdown');
 
 function CountDownTimer(dt, id)
 {
@@ -46,6 +39,7 @@ function CountDownTimer(dt, id)
 }
 
 </script>
+
 <?php if($mission_status == "ongoing"){
     echo '<div class="countdown-div">
             <h1>Do końca misji pozostało:</h1>
