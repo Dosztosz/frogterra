@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 22 Cze 2023, 14:18
+-- Czas generowania: 23 Cze 2023, 14:07
 -- Wersja serwera: 10.4.27-MariaDB
 -- Wersja PHP: 8.2.0
 
@@ -127,6 +127,27 @@ INSERT INTO `players_lvl` (`player_id`, `player_exp`, `player_lvl`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struktura tabeli dla tabeli `players_mission`
+--
+
+CREATE TABLE `players_mission` (
+  `player_id` int(11) NOT NULL,
+  `player_mission_status` varchar(255) NOT NULL,
+  `mission_id` int(11) NOT NULL,
+  `player_mission_time` datetime NOT NULL,
+  `players_mission_id` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Zrzut danych tabeli `players_mission`
+--
+
+INSERT INTO `players_mission` (`player_id`, `player_mission_status`, `mission_id`, `player_mission_time`, `players_mission_id`) VALUES
+(1, 'ongoing', 1, '2023-06-23 14:10:00', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Struktura tabeli dla tabeli `weapons`
 --
 
@@ -168,6 +189,12 @@ ALTER TABLE `players`
   ADD PRIMARY KEY (`player_id`);
 
 --
+-- Indeksy dla tabeli `players_mission`
+--
+ALTER TABLE `players_mission`
+  ADD PRIMARY KEY (`players_mission_id`);
+
+--
 -- Indeksy dla tabeli `weapons`
 --
 ALTER TABLE `weapons`
@@ -194,6 +221,12 @@ ALTER TABLE `helmets`
 --
 ALTER TABLE `players`
   MODIFY `player_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT dla tabeli `players_mission`
+--
+ALTER TABLE `players_mission`
+  MODIFY `players_mission_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT dla tabeli `weapons`
