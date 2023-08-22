@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 23 Cze 2023, 14:07
+-- Czas generowania: 22 Sie 2023, 14:44
 -- Wersja serwera: 10.4.27-MariaDB
 -- Wersja PHP: 8.2.0
 
@@ -114,6 +114,7 @@ INSERT INTO `players_eq` (`player_id`, `helmet_id`, `armor_id`, `weapon_id`) VAL
 CREATE TABLE `players_lvl` (
   `player_id` int(40) NOT NULL,
   `player_exp` int(40) NOT NULL,
+  `player_exp_needed` int(255) NOT NULL,
   `player_lvl` int(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -121,8 +122,8 @@ CREATE TABLE `players_lvl` (
 -- Zrzut danych tabeli `players_lvl`
 --
 
-INSERT INTO `players_lvl` (`player_id`, `player_exp`, `player_lvl`) VALUES
-(1, 69, 5);
+INSERT INTO `players_lvl` (`player_id`, `player_exp`, `player_exp_needed`, `player_lvl`) VALUES
+(1, 6, 225, 11);
 
 -- --------------------------------------------------------
 
@@ -143,7 +144,7 @@ CREATE TABLE `players_mission` (
 --
 
 INSERT INTO `players_mission` (`player_id`, `player_mission_status`, `mission_id`, `player_mission_time`, `players_mission_id`) VALUES
-(1, 'ongoing', 1, '2023-06-23 14:10:00', 1);
+(1, 'ongoing', 1, '2023-06-23 14:20:00', 1);
 
 -- --------------------------------------------------------
 
@@ -186,6 +187,12 @@ ALTER TABLE `helmets`
 -- Indeksy dla tabeli `players`
 --
 ALTER TABLE `players`
+  ADD PRIMARY KEY (`player_id`);
+
+--
+-- Indeksy dla tabeli `players_lvl`
+--
+ALTER TABLE `players_lvl`
   ADD PRIMARY KEY (`player_id`);
 
 --

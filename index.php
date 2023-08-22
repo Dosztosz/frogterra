@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 
 
 $sql = "SELECT players.player_username, 
-        players_lvl.player_exp, players_lvl.player_lvl, 
+        players_lvl.player_exp, players_lvl.player_exp_needed, players_lvl.player_lvl, 
         helmets.helmet_name, helmets.helmet_hp, helmets.helmet_str, helmets.helmet_pow, helmets.helmet_sti,
         armors.armor_name, armors.armor_hp, armors.armor_str, armors.armor_sti,
         weapons.weapon_name, weapons.weapon_str, weapons.weapon_atk_min, weapons.weapon_atk_max,
@@ -27,10 +27,11 @@ $sql = "SELECT players.player_username,
         INNER JOIN players_mission ON players.player_id = players_mission.player_id
         WHERE players.player_id = 1 
         ";
+
 $result = $conn->query($sql);
 
 while($row = $result->fetch_assoc()) { 
-    
+    $player_exp_needed = $row["player_exp_needed"];
     $player_exp = $row["player_exp"]; 
     $player_name = $row["player_username"];
     $player_lvl = $row['player_lvl'];
@@ -54,6 +55,7 @@ while($row = $result->fetch_assoc()) {
 
     $sum_attack_min = ceil(($helmet_str + $armor_str + $weapon_str )*1.2 + $weapon_atk_min);
     $sum_attack_max = ceil(($helmet_str + $armor_str + $weapon_str )*1.2 + $weapon_atk_max);
+    require "resources/refresh_options/check_exp.php";
     }
 
 ?>

@@ -34,7 +34,6 @@ function CountDownTimer(dt, id)
         document.getElementById(id).innerHTML += minutes + 'mins ';
         document.getElementById(id).innerHTML += seconds + 'secs';
     }
-
     timer = setInterval(showRemaining, 1000);
 }
 
