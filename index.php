@@ -89,7 +89,6 @@ if ($result->num_rows > 0) {
                             
                             require_once "resources/sites/fight.php";
                         break;
-
                         case "mission":
                             
                             require_once "resources/sites/missions.php";
