@@ -51,7 +51,7 @@ while($row = $result->fetch_assoc()) {
 
     $mission_status = $row['player_mission_status'];
     $mission_time = $row['player_mission_time'];
-    
+
 
     $sum_attack_min = ceil(($helmet_str + $armor_str + $weapon_str )*1.2 + $weapon_atk_min);
     $sum_attack_max = ceil(($helmet_str + $armor_str + $weapon_str )*1.2 + $weapon_atk_max);
