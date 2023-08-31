@@ -7,8 +7,8 @@
                         <img id="main_frog" src="img/froggs/regular_frog.png" alt="">
                     </div>
                     <div class="top-bar">
-                        <p>EXP <span>(<?php echo $player_exp ?> / <?php echo $player_needed_exp ?>)</span></p>
-                        <progress id="m_exp_char_bar" value="<?php echo $player_exp ?>" max="<?php echo $player_needed_exp ?>"></progress>
+                        <p>EXP <span>(<?php echo $player_exp ?> / <?php echo $player_exp_needed ?>)</span></p>
+                        <progress id="m_exp_char_bar" value="<?php echo $player_exp ?>" max="<?php echo $player_exp_needed ?>"></progress>
                     </div>
                 </div>
                 <div>

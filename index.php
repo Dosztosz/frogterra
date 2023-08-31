@@ -1,6 +1,5 @@
 <?php
  session_start(); 
-    $player_needed_exp = 100;
 require "resources/config/config.php";
 // Create connection
 $conn = new mysqli($db_host, $db_user, $db_password, $db_name);
