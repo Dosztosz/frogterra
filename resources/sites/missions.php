@@ -29,10 +29,10 @@ function CountDownTimer(dt, id)
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById(id).innerHTML = days + 'days ';
-        document.getElementById(id).innerHTML += hours + 'hrs ';
-        document.getElementById(id).innerHTML += minutes + 'mins ';
-        document.getElementById(id).innerHTML += seconds + 'secs';
+        document.getElementById(id).innerHTML = days + 'dni ';
+        document.getElementById(id).innerHTML += hours + 'godzin ';
+        document.getElementById(id).innerHTML += minutes + 'minut ';
+        document.getElementById(id).innerHTML += seconds + 'sekund';
     }
     timer = setInterval(showRemaining, 1000);
 }
@@ -51,7 +51,7 @@ function CountDownTimer(dt, id)
     echo '<div class="countdown-div">
             <h1>Do końca misji pozostało:</h1>
             <div id="countdown"></div>
-            <form name="mission_time" action="fight.php?fight=10" method="post" id="mission_time">
+            <form name="mission_time" action="?site=fight" method="post" id="mission_time">
                 <input type="hidden" name="countdown">
             </form>
             </div>';
