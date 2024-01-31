@@ -62,9 +62,11 @@ while($row = $result->fetch_assoc()) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php require "resources/config/head.php"; ?>
 </head>
+
 <body>
     <?php
 if ($result->num_rows > 0) {
@@ -73,19 +75,18 @@ if ($result->num_rows > 0) {
 
 
 ?>
-    
+
     <?php require "resources/templates/header.php"; ?>
-<div class="container">
-    <div class="main">
-        <?php require "resources/templates/sidebar.php"; ?>
-        <div class="menu background-pixel">
-            <?php 
+    <div class="container">
+        <div class="main">
+            <?php require "resources/templates/sidebar.php"; ?>
+            <div class="menu background-pixel">
+                <?php 
                 if(isset($_GET['site'])){
                     $site = $_GET['site'];
                     switch ($site){
 
                         case "fight":
-                            
                             require_once "resources/sites/fight.php";
                         break;
                         case "mission":
@@ -98,9 +99,9 @@ if ($result->num_rows > 0) {
                     require_once "resources/sites/main.php";
                 }
             ?>
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 <?php 
@@ -109,4 +110,5 @@ if ($result->num_rows > 0) {
   }
 
 $conn->close(); ?>
+
 </html>
